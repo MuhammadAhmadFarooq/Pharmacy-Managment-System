@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="drugpharmamanagementsystem.CheckLowStockController">
+   <children>
+      <Label layoutX="258.0" layoutY="57.0" text="ALERT!" textFill="#f21c1c">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="119.0" layoutY="117.0" text="The following items in the inventory are running low">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableView" layoutX="5.0" layoutY="175.0" prefHeight="200.0" prefWidth="583.0">
+        <columns>
+          <TableColumn fx:id="itemIdColumn" prefWidth="75.0" text="Item ID" />
+          <TableColumn fx:id="itemNameColumn" prefWidth="120.0" text="Item Name" />
+            <TableColumn fx:id="quantityColumn" prefWidth="75.0" text="Quantity" />
+            <TableColumn fx:id="unitCostColumn" prefWidth="75.0" text="Unit Cost" />
+            <TableColumn fx:id="minStockColumn" prefWidth="75.0" text="min_stock" />
+            <TableColumn fx:id="isLockedColumn" prefWidth="75.0" text="is_locked" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

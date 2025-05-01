@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="406.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="drugpharmamanagementsystem.DoctorOptionsController">
+   <children>
+      <Label layoutX="116.0" layoutY="28.0" text="Greetings, Doctor!">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="123.0" layoutY="71.0" text="Enter new Prescription Details" />
+      <Label layoutX="127.0" layoutY="111.0" text="Item ID:" />
+      <TextField fx:id="itemId" layoutX="127.0" layoutY="136.0" />
+      <Label layoutX="127.0" layoutY="168.0" text="Patient ID:" />
+      <TextField fx:id="patientId" layoutX="127.0" layoutY="193.0" />
+      <Label layoutX="127.0" layoutY="230.0" text="Prescription Details:" />
+      <TextField fx:id="prescriptionDetails" layoutX="127.0" layoutY="255.0" />
+      <Label layoutX="127.0" layoutY="288.0" text="Quantity:" />
+      <TextField fx:id="quantity" layoutX="127.0" layoutY="313.0" />
+      <Button layoutX="130.0" layoutY="360.0" mnemonicParsing="false" onAction="#createNewPrescription" text="Create New Prescription" />
+   </children>
+</AnchorPane>

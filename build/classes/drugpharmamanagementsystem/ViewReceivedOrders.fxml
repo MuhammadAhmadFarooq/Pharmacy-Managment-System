@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="drugpharmamanagementsystem.ViewReceivedOrdersController">
+   <children>
+      <Label layoutX="224.0" layoutY="49.0" text="Received Orders">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableView" layoutX="61.0" layoutY="144.0" prefHeight="200.0" prefWidth="478.0">
+        <columns>
+          <TableColumn fx:id="orderIdColumn" prefWidth="75.0" text="Order ID" />
+          <TableColumn fx:id="orderDateColumn" prefWidth="75.0" text="Order Date" />
+            <TableColumn fx:id="itemIdColumn" prefWidth="75.0" text="Item ID" />
+            <TableColumn fx:id="quantityColumn" prefWidth="75.0" text="Quantity" />
+            <TableColumn fx:id="supplierIdColumn" prefWidth="75.0" text="Supplier ID" />
+            <TableColumn fx:id="pharmacistIdColumn" prefWidth="100.0" text="Pharmacist ID" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

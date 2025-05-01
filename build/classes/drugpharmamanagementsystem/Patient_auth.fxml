@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="drugpharmamanagementsystem.Patient_authController">
+   <children>
+      <Label layoutX="198.0" layoutY="46.0" text="Patient Authorization">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="170.0" layoutY="121.0" text="Patient ID:" />
+      <TextField fx:id="patientId" layoutX="170.0" layoutY="150.0" promptText="Enter your patient ID" />
+      <Label layoutX="170.0" layoutY="184.0" text="CNIC:" />
+      <TextField fx:id="Cnic" layoutX="170.0" layoutY="213.0" promptText="Enter your CNIC" />
+      <Button fx:id="loginButton" layoutX="274.0" layoutY="274.0" mnemonicParsing="false" onAction="#loginIsClicked" text="Login" />
+   </children>
+</AnchorPane>
